@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Devolver Cambio</h1>
+        <div class="money">
+            <label for="money">Dinero: </label><br>
+            <input type="text" id= "dinero" oninput = "evaluateMoney()" onchange="noNegatives()">
+        </div>
+        <div class="devueltas" onchange="disableInput()">
+            <div class = "B2000">
+                <label for="billetes">Billetes de 2000: </label><br>
+                <input type="text" id="B2000"><br>
+            </div>
+            <div class = "B1000">
+                <label for="billetes">Billetes de 1000: </label><br>
+                <input type="text" id="B1000"><br>
+            </div>
+            <div class = "B500">
+                <label for="billetes">Billetes de 500: </label><br>
+                <input type="text" id="B500"><br>
+            </div>
+            <div class = "B200">
+                <label for="billetes">Billetes de 200: </label><br>
+                <input type="text" id="B200"><br>
+            </div>
+            <div class = "B100">
+                <label for="billetes">Billetes de 100: </label><br>
+                <input type="text" id="B100"><br>
+            </div>
+            <div class = "B50">
+                <label for="billetes">Billetes de 50: </label><br>
+                <input type="text" id="B50"><br>
+            </div>
+            <div class = "B25">
+                <label for="monedas">Monedas de 25: </label><br>
+                <input type="text" id="B25"><br>
+            </div>
+            <div class = "B10">
+                <label for="billetes">Monedas de 10: </label><br>
+                <input type="text" id="B10"><br>
+            </div>
+            <div class = "B5">
+                <label for="billetes">Monedas de 5: </label><br>
+                <input type="text" id="B5"><br>
+            </div>
+            <div class = "B1">
+                <label for="billetes">Monedas 1: </label><br>
+                <input type="text" id="B1"><br><br>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <script src= "script.js"></script>
+</body>
+</html>
